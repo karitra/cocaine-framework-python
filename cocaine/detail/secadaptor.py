@@ -60,7 +60,7 @@ class TVM(object):
     def fetch_token(self):
         '''Gains token from secure backend service.
         Returns:
-            token (str): formatted for cocaine protocol header token.
+            str: token formatted for cocaine protocol header.
         '''
         grant_type = 'client_credentials'
 
