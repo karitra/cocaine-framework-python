@@ -114,7 +114,7 @@ class SecureServiceAdaptor(object):
                 elif not self._token:  # init state
                     self._token = yield self._secure.fetch_token()
             else:
-                    self._token = yield self._secure.fetch_token()
+                self._token = yield self._secure.fetch_token()
         except Exception as err:
             raise SecureServiceError(
                 'failed to fetch secure token: {}'.format(err))
